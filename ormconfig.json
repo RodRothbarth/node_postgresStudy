@@ -1,9 +1,15 @@
 {
   "type": "postgres",
   "host": "localhost",
-  "port": 5432,
+  "port": 5434,
   "username": "postgres",
-  "password" : "docker",
-  "database": "apivendas"
+  "password" : "Nao tenho1",
+  "database": "apivendas",
+  "idleTimeoutMillis": 0,
+  "migrations": ["./src/shared/typeOrm/migrations/*.ts"],
+  "cli": {
+    "migrationDir": "./src/shared/typeOrm/migrations"
+  },
+  "connectionTimeoutMillis": 0
 }
 
